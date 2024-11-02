@@ -4,11 +4,12 @@
 	import { damp } from 'three/src/math/MathUtils.js';
 	import IconGithub from '~icons/fa-brands/github';
 	import IconLinkedin from '~icons/fa-brands/linkedin';
+	import Bounded from './Bounded.svelte';
 
 	export let settings: Content.SettingsDocument;
 </script>
 
-<footer class="text-slate-600">
+<Bounded as="footer" class="text-slate-600">
 	<div
 		class="container mx-auto flex mt-20 flex-col items-center justify-between gap-6 py-8 sm:flex-row"
 	>
@@ -67,4 +68,4 @@
 			{/if}
 		</div>
 	</div>
-</footer>
+</Bounded>
